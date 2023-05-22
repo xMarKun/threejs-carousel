@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.lcl-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lcl-main__in {
+  position: relative;
+  margin-left: 40vw;
+  width: 40%;
+}
+.lcl-main-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 100%;
+  color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s ease;
+}
+.lcl-main-hero.lcl-main-hero--active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0.29s ease, transform 0.3s 0.29s ease, visibility 0s 0.29s ease;
+}
+.lcl-main-hero__name {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.lcl-main-ttl__real {
+  font-weight: 500;
+  font-size: 16px;
+}
+.lcl-main-hero__copy {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.lcl-main-hero__txt {
+  font-size: 16px;
+}
+.lcl-main-hero__btn {
+  background: #e82429;
+  color: #ffffff;
+  padding: 10px 62px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+.lcl-main-hero__btn:hover {
+  opacity: 0.7;
+}
+.lcl-main-hero__btn--small {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.lcl-main-hero__btn + .lcl-main-hero__btn {
+  margin-left: 15px;
+}

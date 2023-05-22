@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js Carousel</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <main class="lcl-main">
+      <div class="lcl-main__in">
+        <section class="lcl-main-hero lcl-main-hero--active">
+          <h2 class="lcl-main-hero__name">アイアンマン<span class="lcl-main-ttl__real">（=トニー・スターク）</span></h2>
+          <h3 class="lcl-main-hero__copy">最新鋭のパワードスーツで戦うセレブヒーロー</h3>
+          <p class="lcl-main-hero__txt">天才的な頭脳を持つ実業家であり発明家。自ら開発した最新鋭のパワードスーツを装着してアイアンマンとなれば、全身が最強の武器となり、超人的な腕力や音速飛行のパワーを発揮する。手のひらには光学兵器リパルサー・ビーム、胸にはユニ・ビームを搭載。スーツは複数のタイプが存在し、常にグレードアップされている。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/ironman" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ガモーラ</h2>
+          <h3 class="lcl-main-hero__copy">運命と闘う“ツンデレ”暗殺者</h3>
+          <p class="lcl-main-hero__txt">“ガーディアンズ”のメンバー。サノスの養女として殺人兵器になるべく育てられたが、運命に抗い、仲間のために生きる。ツンデレな態度が魅力。スター・ロードは気になる存在だが、素直になれない。高度な格闘能力が武器。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/gamora" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">キャプテン・アメリカ<span class="lcl-main-ttl__real">（=スティーブ・ロジャース）</span></h2>
+          <h3 class="lcl-main-hero__copy">永い眠りから覚めた、正義に生きる伝説のソルジャー</h3>
+          <p class="lcl-main-hero__txt">小柄で病弱だったが、第二次大戦中の極秘実験で史上最強の兵士へと生まれ変わる。凍った海へ落ち70年近くの間仮死状態の後、発見され蘇る。ヴィブラニウム製の盾（シールド）を防御や武器として使用。極秘実験で超人血清を注入されたため、驚異的な耐久力・腕力・反応速度をそなえ、格闘スキルも高い。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/captainamerica" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ソー</h2>
+          <h3 class="lcl-main-hero__copy">雷のパワーを操る破天荒な神様(カミサマ)</h3>
+          <p class="lcl-main-hero__txt">神の国アスガルドの王の息子。豪快で大胆、まっすぐな性格。驚異的な腕力と耐久力を持ち、恐るべきパワーを秘めたムジョルニアと呼ばれる、ソーにしか持ち上げられない究極のハンマーで戦うのを得意としていたが、戦いの最中に失ってしまう。絶体絶命の戦いを経て“雷神”としての力が目覚め、雷のパワーを操ることができるようになった。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/thor" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ドクター・ストレンジ<span class="lcl-main-ttl__real">（=スティーヴン・ストレンジ）</span></h2>
+          <h3 class="lcl-main-hero__copy">外科医の経歴を持つ、上から目線の最強魔術師</h3>
+          <p class="lcl-main-hero__txt">悲劇的な事故により、“神の手”とまで呼ばれた両手の機能を失ってしまった元天才外科医。厳しい修行の末に魔術師として生まれ変わり、“人類を守る”という運命に生きる。修行で身に着けた瞬間移動や時間を操る能力に加え、戦う相手によって的確に戦術を導き出す知性が強み。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/doctorstrange" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ブラック・ウィドウ<span class="lcl-main-ttl__real">（=ナターシャ・ロマノフ）</span></h2>
+          <h3 class="lcl-main-hero__copy">スパイとして育てられたクールな美人エージェント</h3>
+          <p class="lcl-main-hero__txt">万能な戦闘スキルとタフな精神をそなえた、世界最高のエージェント。過酷な訓練によって育てられた、元KGBのスパイにして超一流の暗殺者。今はそのスキルを平和のために役立てている。高度な格闘技や狙撃の技術を誇り、ずば抜けた身体能力による戦闘やスパイ活動でチームに貢献。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/blackwidow" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">スパイダーマン <span class="lcl-main-ttl__real">（=ピーター・パーカー）</span></h2>
+          <h3 class="lcl-main-hero__copy">アイアンマンに憧れる、やんちゃな高校生ヒーロー</h3>
+          <p class="lcl-main-hero__txt">特殊なクモに噛まれてパワーを得る。素顔はフツーの高校生。アイアンマンに誘われ参戦したアベンジャーズの一員になる夢を抱く。超人的な反射神経やジャンプ力、筋力を誇り、高い壁や天井に吸着することが可能。手首のウェブ・シューターから発射される強力なクモの糸を駆使して敵を捕らえ、ビル街の宙を飛ぶように移動することができる。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/spiderman" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ブラックパンサー<span class="lcl-main-ttl__real">（=ティ・チャラ）</span></h2>
+          <h3 class="lcl-main-hero__copy">ヒーローの顔をあわせもつミステリアスな国王</h3>
+          <p class="lcl-main-hero__txt">アフリカのワカンダ王国の王にして、漆黒のヒーロー、ブラックパンサーでもあるという2つの顔を持つ。超人的な戦士。高い知能と身体能力をそなえる。超金属ヴィブラニウム製の漆黒のスーツは戦闘モードになると自動装着され、全ての衝撃を吸収して攻撃に変換。手にはヴィブラニウム・クロウが備わり、どんなものでも破壊できる。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/blackpanther" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ネビュラ</h2>
+          <h3 class="lcl-main-hero__copy">こじらせ女子の過激な暗殺者</h3>
+          <p class="lcl-main-hero__txt">ガモーラの妹。姉と共にサノスの養女として殺人兵器になるべく育てられる過程で、身体の大半を機械にされた。壮絶な戦いを経て“ガーディアンズ”の仲間に。過激な戦闘能力を誇る。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/nebula" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">スター・ロード<span class="lcl-main-ttl__real">（=ピーター・クイル）</span></h2>
+          <h3 class="lcl-main-hero__copy">地球生まれ銀河育ちのノリノリな賞金稼ぎ</h3>
+          <p class="lcl-main-hero__txt">幼少期に地球からさらわれてきた過去を持つ。銀河を荒らしまわるトレジャー・ハンターとしてつちかった度胸で、銀河一の落ちこぼれチーム“ガーディアンズ”のリーダーとなり銀河を守る。底抜けに明るく、うぬぼれ度も満点。敵を出し抜く悪知恵と行動力、高い身体能力もさることながら、最大の武器はチームワーク。ガモーラに好意を抱いている。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/starroad" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">スカーレット・ウィッチ<span class="lcl-main-ttl__real">（=ワンダ・マキシモフ）</span></h2>
+          <h3 class="lcl-main-hero__copy">パワフルな超能力者</h3>
+          <p class="lcl-main-hero__txt">悪の組織の人体実験によって生み出された超人でありながら、自分の能力の大きさに戸惑う一面も。テレキネシス能力と心理操作の力をあわせ持つ。この特殊能力は、感情の強さに比例して強大になり、時にハルク並みの破壊力を発揮する。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/scarletwitch" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ウィンター・ソルジャー<span class="lcl-main-ttl__real">（=バッキー・バーンズ）</span></h2>
+          <h3 class="lcl-main-hero__copy">サイバネテック義手の超人ソルジャー</h3>
+          <p class="lcl-main-hero__txt">第二次大戦時に死んだとされていたが、悪の組織により洗脳され、暗殺者として蘇る。その後、本来の人格を取り戻し、キャプテン・アメリカたちと共に戦うように。金属製のメタルアームによる腕力や戦闘能力は超人的。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/wintersoldier" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ハルク<span class="lcl-main-ttl__real">（=ブルース・バナー）</span></h2>
+          <h3 class="lcl-main-hero__copy">怒りでモンスターに変身する苦悩の天才科学者</h3>
+          <p class="lcl-main-hero__txt">トニーも認める天才科学者だが、過去の実験中の事故により、極度の興奮や怒りを感じると凶暴なモンスター、ハルクに変身してしまう。ひとたびハルクになるとコントロール不能に。ハルクにも喜びや悲しみの感情が芽生えつつある。ハルクの武器は、限界を知らぬ超人的な腕力やジャンプ力で、その破壊力は驚異的。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/hulk" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">シュリ</h2>
+          <h3 class="lcl-main-hero__copy">国王の妹にして天才科学者</h3>
+          <p class="lcl-main-hero__txt">ティ・チャラの妹で好奇心旺盛なワカンダの王女。天才科学者で、ブラックパンサーのスーツも開発する。ヴィブラニウムを研究し、最先端のテクノロジーを使った数々のアイテムを創り出し、国の発展に貢献するとともに、科学者の立場からブラックパンサーの戦いを支える。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/syuri" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ロケット & グルート</h2>
+          <h3 class="lcl-main-hero__copy">高度な知能の毒舌凶暴アライグマ & 怒ると制御不能のキュートな“木”</h3>
+          <p class="lcl-main-hero__txt">“ガーディアンズ”のメンバー。遺伝子改造が施された高度な知能を持っているアライグマ。可愛らしい外見とは裏腹に、怒ると銃をぶっ放す超過激な無法者。武器製造のエキスパートで、特技はオリジナルの武器の製作。</p>
+          <p class="lcl-main-hero__txt">かつて大人の“木”だった時、自らを犠牲にして仲間を守った。その後、残った枝の挿し木から幼い“木”となり、今、少年の“木”にまで成長。ひとたび怒ると制御不能な戦闘能力が覚醒し、伸縮自在の枝を使って暴れまわる。</p>
+          <a class="lcl-main-hero__btn lcl-main-hero__btn--small" href="https://marvel.disney.co.jp/movie/avengers-iw/character/rocket" target="_blank" rel="noopener noreferrer">公式サイト（ロケット）</a>
+          <a class="lcl-main-hero__btn lcl-main-hero__btn--small" href="https://marvel.disney.co.jp/movie/avengers-iw/character/groot" target="_blank" rel="noopener noreferrer">公式サイト（グルート）</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ヴィジョン</h2>
+          <h3 class="lcl-main-hero__copy">ピュアで気高き精神を持つ人造人間</h3>
+          <p class="lcl-main-hero__txt">アイアンマンをサポートする人工知能ジャーヴィスと、ソーの弟・ロキの杖の先に隠されていたマインド・ストーンと、ウルトロンが準備していた究極の人造ボディが融合し生まれた人造人間。ピュアで気高き精神の持ち主であり、ソーしか持ち上げられない武器・ムジョルニアを持ち上げられる。超人的な身体能力と、様々な攻撃力を備える。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/vision" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">オコエ</h2>
+          <h3 class="lcl-main-hero__copy">国王を守る誇り高き女戦士</h3>
+          <p class="lcl-main-hero__txt">歴代のワカンダ国王へ忠誠を尽くしてきた親衛隊ドーラ・ミラージュの現・隊長にして最強の戦士。王家から信頼が厚く、ティ・チャラが王子の頃から面倒をみる。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/okoye" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ドラックス</h2>
+          <h3 class="lcl-main-hero__copy">マッチョな破壊王</h3>
+          <p class="lcl-main-hero__txt">“ガーディアンズ”のメンバー。野獣のような強靭な肉体と力を持つ荒くれ者。見た目とは正反対の天然過ぎる言動は、時に仲間との絆を繋ぐことも。どんな敵にも怯むことなく突き進む、圧倒的なパワーによる戦闘が得意。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/drax" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ファルコン<span class="lcl-main-ttl__real">（=サム・ウィルソン）</span></h2>
+          <h3 class="lcl-main-hero__copy">人工の翼を駆使する空飛ぶ戦士</h3>
+          <p class="lcl-main-hero__txt">米空軍のパラシュート部隊に属していた元兵士。戦場で友を亡くして退役。同じように過去の友人に強い思いを抱いていたキャプテン・アメリカと知り合い、友人となる。人工の翼で空を飛び、戦闘スキルも高い。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/falcon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">マンティス</h2>
+          <h3 class="lcl-main-hero__copy">心が読める不思議ちゃん</h3>
+          <p class="lcl-main-hero__txt">“ガーディアンズ”のメンバー。人との接し方がわからない不思議ちゃんだが、“ガーディアンズ”には心を開き仲間に。頭には触覚。相手に触れただけで感情を読み取る能力を持ち、さらに相手の感情をコントロールする力がある。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/mantis" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ウォーマシン<span class="lcl-main-ttl__real">（=ジェームズ・“ローディ”・ローズ）</span></h2>
+          <h3 class="lcl-main-hero__copy">アイアンマンの親友で軍人</h3>
+          <p class="lcl-main-hero__txt">アイアンマンの長きにわたる良き友人で、アメリカ空軍大佐。多くは国防や軍の任務のために出動し、危険な敵との戦いにおいてアイアンマンと運命を共にしてきた。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/warmachine" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+        <section class="lcl-main-hero">
+          <h2 class="lcl-main-hero__name">ウォン</h2>
+          <h3 class="lcl-main-hero__copy">カマー・タージの荘厳なる図書館の守護者</h3>
+          <p class="lcl-main-hero__txt">図書館には、長い時を超えて存在する、魔術の体得に必要となるあらゆる知識が並ぶ。その膨大な蔵書に秘められている魔術の真理や禁断の秘術が、人類を脅かす者の手に渡らぬよう、命懸けで守っている。</p>
+          <a class="lcl-main-hero__btn" href="https://marvel.disney.co.jp/movie/avengers-iw/character/wong" target="_blank" rel="noopener noreferrer">公式サイト</a>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
